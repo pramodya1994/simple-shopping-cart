@@ -1,6 +1,11 @@
 # Simple Shopping Cart
 Simple shopping cart using Java SE
 
+## Prerequisites
+
+- Java 11
+- Maven 3.5
+
 ## How to run application
 
 #### Local machine
