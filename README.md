@@ -1,6 +1,10 @@
 # Simple Shopping Cart
 Simple shopping cart using Java SE
 
+## UML Class Diagram
+
+![alt text](shopping-cart.png)
+
 ## Prerequisites
 
 - Java 11
