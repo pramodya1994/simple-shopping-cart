@@ -4,7 +4,13 @@ import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.sample.exceptions.InvalidCustomerNameException;
 import org.sample.exceptions.InvalidPriceException;
+import org.sample.models.Customer;
+import org.sample.models.Product;
+import org.sample.models.ShoppingCart;
 
+/**
+ * This is the main class of this application.
+ */
 public class Main {
 
     private static final Logger logger = Logger.getLogger(Main.class);

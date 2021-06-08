@@ -2,6 +2,8 @@ package org.sample;
 
 import org.sample.exceptions.InvalidCustomerNameException;
 import org.sample.exceptions.InvalidPriceException;
+import org.sample.models.Customer;
+import org.sample.models.Product;
 import org.testng.annotations.Test;
 
 /**

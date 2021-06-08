@@ -1,4 +1,4 @@
-package org.sample;
+package org.sample.models;
 
 import org.sample.exceptions.InvalidPriceException;
 

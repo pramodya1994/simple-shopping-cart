@@ -1,6 +1,8 @@
 package org.sample;
 
 import org.sample.exceptions.InvalidPriceException;
+import org.sample.models.Product;
+import org.sample.models.ShoppingCart;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
