@@ -2,12 +2,15 @@ package org.sample;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
+import java.util.UUID;
 
 /**
  * {@code ShoppingCart} represents shopping cart of the super market.
  */
 public class ShoppingCart {
 
+    private final UUID id;
     // Products map used to keep products with the qty
     // Assumed qty is related with cart, rather than product
     private final Map<Product, Double> products = new HashMap<>();
@@ -18,6 +21,25 @@ public class ShoppingCart {
     // Default shipping cost is set to 150, and
     // assume shipping cost is applicable for the cart, but not individual items
     private double shippingCost = 150.0;
+
+    public ShoppingCart() {
+        this.id = UUID.randomUUID();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+        ShoppingCart that = (ShoppingCart) o;
+        return id.equals(that.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
 
     /**
      * Add product to the shopping cart.

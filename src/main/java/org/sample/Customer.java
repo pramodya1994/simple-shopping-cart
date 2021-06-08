@@ -2,6 +2,8 @@ package org.sample;
 
 import org.sample.exceptions.InvalidCustomerNameException;
 
+import java.util.Objects;
+
 public class Customer {
 
     // Adding customer details fields.
@@ -14,6 +16,21 @@ public class Customer {
             throw new InvalidCustomerNameException("Customer name should not be empty");
         }
         this.name = name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+        Customer customer = (Customer) o;
+        return name.equals(customer.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
     }
 
     /**
